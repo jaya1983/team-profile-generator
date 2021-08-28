@@ -1,0 +1,26 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Generates Team Profile ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaya1983/team-profile-generator.git"
+  },
+  "keywords": [
+    "Team",
+    "profile"
+  ],
+  "author": "Jaya Gudipalli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaya1983/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/jaya1983/team-profile-generator#readme",
+  "dependencies": {
+    "package": "^1.0.1"
+  }
+}
