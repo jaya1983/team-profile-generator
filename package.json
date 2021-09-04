@@ -4,7 +4,7 @@
   "description": "Generates Team Profile ",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "jest": "npm run test"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/jaya1983/team-profile-generator#readme",
   "dependencies": {
+    "inquirer": "^8.1.2",
     "package": "^1.0.1"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0"
   }
 }
