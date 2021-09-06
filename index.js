@@ -9,6 +9,11 @@ const Employee = require('./lib/Employee');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
+const DIST_DIR = path.resolve(__dirname, 'dist')
+const outputPath = path.join(DIST_DIR, 'index.html');
+
+const render = require('./src/HomePage.js');
+
 let teamArray = [];
 let idArray = [];
 // initialize app, function to add manager
@@ -216,11 +221,11 @@ function initApp() {
     function generateHTML() {
 
       // Create dist directory for index.html if it doesnt exist
-      if (!fs.existsSync("./dist")) {
-          fs.mkdirSync("./dist")
+      if (!fs.existsSync(DIST_DIR)) {
+          fs.mkdirSync(DIST_DIR)
       }
       console.log("Generating Team Profile.... ");
-      fs.writeFileSync("./dist/test.txt", JSON.stringify(teamArray))
+      fs.writeFileSync(outputPath, render(teamArray), "utf-8");
   }
   addManager();
 }
